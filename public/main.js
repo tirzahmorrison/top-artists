@@ -12,7 +12,14 @@ angular
     }).then(response => {
       console.log(response)
       console.log(response.data)
-      $scope.data = response.data
+      $scope.data= response.data.artists.artist.map(a => ({
+        name: a.name,
+        playCount: a.playcount,
+        listenCount: a.listeners,
+        picturePath: a.image.find(img => img.size === "large")["#text"]
+      }))
+      console.dir($scope.data)
+
     })
 
   }])
