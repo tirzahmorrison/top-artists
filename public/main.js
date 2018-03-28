@@ -12,7 +12,7 @@ angular
     }).then(response => {
       console.log(response)
       console.log(response.data)
-      $scope.data= response.data.artists.artist.map(a => ({
+      $scope.data = response.data.artists.artist.map(a => ({
         name: a.name,
         playCount: a.playcount,
         listenCount: a.listeners,
