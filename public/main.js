@@ -12,6 +12,7 @@ angular
     }).then(response => {
       console.log(response)
       console.log(response.data)
+      $scope.data = response.data
     })
 
   }])
