@@ -1,7 +1,7 @@
 const BASE_URL = "https://www.last.fm/api"
   angular
     .module("top-artists", [])
-    .controller("mainController", ["$scope","$http",($scope, http) => {
+    .controller("mainController", ["$scope","$http",($scope, $http) => {
 
     }])
 
