@@ -7,7 +7,7 @@ angular
 
     $http({
       method: "GET",
-      url: BASE_URL + "show/chart.getTopArtists"
+      url: BASE_URL + `show/chart.getTopArtists`
     }).then(response => {
       console.log(response);
       console.log(response.data);
